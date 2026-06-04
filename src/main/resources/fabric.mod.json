@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "only-random-motd",
+	"version": "${version}",
+	"name": "only random motd",
+	"description": "simple motd styling chosen randomly from a list",
+	"authors": [
+		"Beezing"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "assets/only-random-motd/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"beezing.ormotd.OnlyRandomMotd"
+		]
+	},
+	"mixins": [
+		"only-random-motd.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
